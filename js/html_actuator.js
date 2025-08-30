@@ -75,6 +75,12 @@ HTMLActuator.prototype.addTile = function (tile) {
 
     inner.appendChild(img);
   }
+  else if (tile.value === 8) {
+    const img = document.createElement('img');
+    img.src = "./images/plato.jpg";
+
+    inner.appendChild(img);
+  }
   else {
     inner.textContent = tile.value;
   }
